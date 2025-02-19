@@ -1,0 +1,4 @@
+- name: Restart Bacula File Daemon
+  service:
+    name: bacula-fd
+    state: restarted

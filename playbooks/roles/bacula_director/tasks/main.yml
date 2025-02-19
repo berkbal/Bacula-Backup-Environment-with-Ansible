@@ -1,0 +1,5 @@
+---
+
+- name: "Install Bacula Director" 
+  ansible.builtin.import_tasks: 00_install_bacula_director.yml
+
