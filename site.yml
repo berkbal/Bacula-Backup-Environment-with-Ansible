@@ -1,0 +1,19 @@
+---
+
+- name: Install Bacula Director
+  hosts: bacula_director
+  become: true
+  roles:
+    - bacula_director
+
+- name: Install Bacula Storage Daemon
+  hosts: bacula_storage
+  become: true
+  roles:
+    - bacula_storage
+
+- name: Install Bacula File Daemon (Clients)
+  hosts: bacula_clients
+  become: true
+  roles:
+    - bacula_clients

@@ -1,0 +1,18 @@
+Storage {
+  Name = File
+  SDPort = 9103
+  WorkingDirectory = "/var/lib/bacula"
+  PidDirectory = "/var/run/bacula"
+  Maximum Concurrent Jobs = 10
+}
+
+Device {
+  Name = FileStorage
+  MediaType = File
+  ArchiveDevice = /mnt/backup
+  LabelMedia = yes
+  RandomAccess = Yes
+  AutomaticMount = yes
+  RemovableMedia = no
+  AlwaysOpen = yes
+}

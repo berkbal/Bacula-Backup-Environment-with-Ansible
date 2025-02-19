@@ -1,0 +1,4 @@
+- name: Restart Bacula Storage
+  service:
+    name: bacula-sd
+    state: restarted

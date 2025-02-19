@@ -1,0 +1,9 @@
+Client {
+  Name = {{ inventory_hostname }}-fd
+  Address = {{ ansible_host }}
+  FDPort = 9102
+  Catalog = MyCatalog
+  Password = "fd_password"
+  File Retention = 30 days
+  Job Retention = 6 months
+}
